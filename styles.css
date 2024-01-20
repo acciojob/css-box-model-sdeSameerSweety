@@ -1,2 +1,27 @@
 
 /* Your CSS Code here. */
+*{
+	box-sizing: border-box;
+	margin:0px;
+	padding:0px;
+}
+
+.box {
+	  position: relative;
+      width: 300px;
+      background-color: lightblue;
+      border: 15px solid blue;
+      padding: 50px;
+      margin: 20px;
+    }
+
+.box::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  border: 2px solid black;
+  box-shadow: 3px 1px
+}
